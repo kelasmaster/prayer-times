@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Islamic Prayer Times</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Islamic Prayer Times</h1>
+    </header>
+
+    <main>
+      <div class="location-input">
+        <input type="text" id="location" placeholder="Enter your city">
+        <button id="fetch-prayer-times">Get Prayer Times</button>
+      </div>
+
+      <div class="date-display">
+        <p id="gregorian-date">Gregorian Date: --/--/----</p>
+        <p id="hijri-date">Hijri Date: --/--/----</p>
+      </div>
+
+      <div class="prayer-times">
+        <div class="prayer">
+          <span>Fajr:</span>
+          <span id="fajr-time">--:--</span>
+        </div>
+        <div class="prayer">
+          <span>Dhuhr:</span>
+          <span id="dhuhr-time">--:--</span>
+        </div>
+        <div class="prayer">
+          <span>Asr:</span>
+          <span id="asr-time">--:--</span>
+        </div>
+        <div class="prayer">
+          <span>Maghrib:</span>
+          <span id="maghrib-time">--:--</span>
+        </div>
+        <div class="prayer">
+          <span>Isha:</span>
+          <span id="isha-time">--:--</span>
+        </div>
+      </div>
+
+      <div class="notifications">
+        <button id="enable-notifications">Enable Notifications</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
